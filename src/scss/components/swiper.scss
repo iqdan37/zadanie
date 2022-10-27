@@ -1,0 +1,72 @@
+.swiper {
+  &-wrapper{
+    margin-left: 16px;
+  }
+  &-pagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    margin-bottom: 28px;
+    &-bullet {
+      height: 12px;
+      width: 12px; 
+      background: #DDD;
+      border-radius: 50%;  
+      margin: 0 6px;  
+      &-active {
+        background: #B5B6BC; 
+      }
+    }
+  }
+}
+.slider__title{
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $gray;
+  background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+  padding: 16px;
+}
+.slider__text{
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $linkblack; 
+}
+.slider__link{
+  width: 240px;
+  height: 72px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $darkwhite;
+  border-radius: 6px;
+  background-color: $white;
+  margin: 0;
+  box-sizing: border-box;
+}
+.slider__img-arrow{
+  padding: 12px 13px 12px 15px;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  align-self: flex-end;
+}
+.swiper-slide{
+  flex-shrink: unset;
+}
+.techniks__link{
+  width: 224px;
+  height: 160px;
+  box-sizing: border-box;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $darkwhite;
+  border-radius: 6px;
+  background-color: $white;
+}

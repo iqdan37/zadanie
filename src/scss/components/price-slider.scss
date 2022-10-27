@@ -1,0 +1,76 @@
+.price{
+  &__table{
+    display: none;
+  }
+  &__link{
+    width: 226px;
+    height: 166px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $darkwhite;
+    border-radius: 6px;
+    background-color: $white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title{
+    font-size: 14px;
+    line-height: 16px;
+    color: $gray;
+    opacity: 0.72;
+  }
+  &__info{
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+  }
+  &__button{
+    background: $pink;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    padding: 4px 19px 4px 19px;
+    &-text{
+      font-size: 12px;
+      line-height: 24px;
+      font-family: 'TT Lakes Condensed Bold';
+      letter-spacing: -0.15px;
+      text-transform: uppercase;
+      color: $white;
+    }
+  }
+  &__footer{
+    padding-left: 24px;
+    &-text{
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+        padding-bottom: 10px;
+        max-width: 421px;
+    }
+    &-link{
+        max-width: 292px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        padding-bottom: 57px;
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: #1B1C21;
+            font-size: 16px;
+            font-family: 'TT Lakes Condensed Medium';
+        }
+    }
+  }
+}

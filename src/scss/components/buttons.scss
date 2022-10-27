@@ -1,0 +1,49 @@
+.contacts__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: all .2s linear;
+}
+.contacts__btn:hover{
+    box-shadow: 0 0 5px 0 #34495e;
+    border-radius: 50%;
+}
+.changer{
+  font-family: 'TT Lakes Condensed Medium';
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $linkblack;
+}
+.changer:active{
+  color: $gray;
+}
+.changer:hover{
+  color: $gray;
+}
+.slider__button,
+.techniks__button{
+  font-family: 'TT Lakes Condensed Medium';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  padding-left: 25px;
+  position: relative;
+  display: none;
+}
+.slider__button::before,
+.techniks__button::before{
+  content: url(../img/ic/icon.svg);
+  position: absolute;
+  left: 2px;
+}
+.hidden::before{
+  content: url(../img/ic/icon.svg);
+  position: absolute;
+  left: 2px;
+  transform: rotate(180deg);
+}

@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'TT Lakes Condensed Medium';
+    src: url('../fonts/TTLakesCondensed-Medium.eot');
+    src: url('../fonts/TTLakesCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakesCondensed-Medium.woff') format('woff'),
+    url('../fonts/TTLakesCondensed-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes Condensed Bold';
+    src: url('../fonts/TTLakesCondensed-Bold.eot');
+    src: url('../fonts/TTLakesCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakesCondensed-Bold.woff') format('woff'),
+    url('../fonts/TTLakesCondensed-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'TT Lakes Condensed Regular';
+    src: url('../fonts/TTLakesCondensed-Regular.eot');
+    src: url('../fonts/TTLakesCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakesCondensed-Regular.woff') format('woff'),
+    url('../fonts/TTLakesCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+  font-family: 'TT Lakes Condensed Regular';
+  background-color: #F8F8F8;
+  margin: 0;
+  height: 100%;
+}
+h1{
+  font-family: 'TT Lakes Condensed Bold';
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: #1B1C21;
+  margin: 0;
+  padding-top: 24px;
+}
+h2,
+h3,
+h4,
+h5{
+    margin: 0;
+}
+p{
+  font-family: 'TT Lakes Condensed Regular';
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #1B1C21;
+  margin: 0;
+}
+button{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  white-space: nowrap;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+.container{
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+.icon--background{
+  background-color: $pink;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  background-position: center;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: all .2s linear;
+}
+.icon:hover{
+  box-shadow: 0 0 5px 0 #34495e;
+  border-radius: 50%;
+}
+.sections__section{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.sections{
+  flex: 1 1 auto;
+}

@@ -1,0 +1,131 @@
+.services{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 32px;
+  padding-right: 30px;
+  &__title{
+    padding-left: 16px;
+    position: relative;
+  }
+  &__title::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 3px;
+    height: 42px;
+    background: rgba(65, 246, 215, 1);
+    border-radius: 2px;
+  }
+  &__hidden{
+    display: none;
+  }
+  &__option,
+  &__status{
+    display: flex;
+    align-items: center;
+    font-family: 'TT Lakes Condensed Medium';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.2px;
+    color: $linkblack;
+    gap: 10px;
+  }
+  &__option-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: all .2s linear;
+  }
+  &__status-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      transition: all .2s linear;
+  }
+  &__buttons::-webkit-scrollbar{
+    width: 0;   
+  }
+  &__buttons{
+    padding-left: 16px;
+    display: flex;
+    overflow: scroll;
+  }
+  &__buttons-options{ 
+    display: none;
+    align-items: center;
+  }
+  &__buttons ul{
+    display: flex;
+  }
+  &__btn{
+    background-color: transparent;
+    white-space: nowrap;
+    padding: 6px 14px 6px 14px;
+    border: 2px solid #F8F8F8;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'TT Lakes Condensed Regular';
+    letter-spacing: -0.2px;
+    color: $linkblack;
+    transition: all .3s ease ;
+    text-decoration: none;
+  }
+  &__btn:hover,
+  &__btn:focus,
+  &__btn:active{
+    background: $white;
+    border: 2px solid $lightgreen;
+    border-radius: 6px;
+  }
+  &__btn-more{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $linkblack;
+    padding-left: 25px;
+    padding-bottom: 16px;
+    position: relative;
+  }
+  &__btn-more:before{
+    content: url(../img/ic/icon.svg);
+    position: absolute;
+    left: 5px;
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__info{
+    padding: 0px 16px 0px 16px;
+  }
+  &__img{
+    width: 320px;
+    height: 176px;
+  }
+  &__span{
+    display: none;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 90px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    transition: all .3s linear;
+  }
+}
+.services__text.text__open{
+  max-height: 215px;
+}
